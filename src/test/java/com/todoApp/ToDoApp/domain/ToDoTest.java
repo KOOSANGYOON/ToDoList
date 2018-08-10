@@ -4,8 +4,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.concurrent.TimeUnit;
-
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
@@ -21,7 +19,7 @@ public class ToDoTest {
         ToDo toDo = makeToDo("todo_one");
         assertEquals(toDo.getTitle(), "todo_one");
         assertEquals(toDo.isDone(), false);
-        assertEquals(toDo.isReadyStatus(), true);
+        assertEquals(toDo.isReadyState(), true);
         assertEquals(toDo.getReferedToDos().size(), 0);
         assertEquals(toDo.getReferingToDos().size(), 0);
         assertNotEquals(toDo.getFormattedCreatedDate(), "");
@@ -39,27 +37,55 @@ public class ToDoTest {
     }
 
     @Test
-    public void registerToDoTest() {
+    public void registerToDoTest() throws Exception {
         ToDo toDoOne = makeToDo("todo_one");
         ToDo toDoTwo = makeToDo("todo_two");
 
-        toDoOne.registerReferedToDo(toDoTwo);
-        toDoTwo.registerReferingToDo(toDoOne);
+        toDoOne.registerReferingToDo(toDoTwo);
+        toDoTwo.registerReferedToDo(toDoOne);
 
-        assertEquals(toDoOne.getReferedToDos().size(), 1);
-        assertEquals(toDoTwo.getReferingToDos().size(), 1);
+        assertEquals(toDoOne.getReferingToDos().size(), 1);
+        assertEquals(toDoTwo.getReferedToDos().size(), 1);
+
+        assertTrue(toDoOne.isReadyState());
+        assertFalse(toDoTwo.isReadyState());
+    }
+
+    @Test(expected = Exception.class)
+    public void registerToDoTest_alreadyRegistered() throws Exception {
+        ToDo toDoOne = makeToDo("todo_one");
+        ToDo toDoTwo = makeToDo("todo_two");
+
+        toDoOne.registerReferingToDo(toDoTwo);
+        toDoTwo.registerReferedToDo(toDoOne);
+        toDoTwo.registerReferingToDo(toDoOne);
     }
 
     @Test
-    public void isAlreadyReferedTest() {
+    public void completeToDoTest() throws Exception {
         ToDo toDoOne = makeToDo("todo_one");
         ToDo toDoTwo = makeToDo("todo_two");
 
-        toDoOne.registerReferedToDo(toDoTwo);
-        toDoTwo.registerReferingToDo(toDoOne);
+        toDoOne.registerReferingToDo(toDoTwo);
+        toDoTwo.registerReferedToDo(toDoOne);
 
-        boolean result = toDoOne.isAlreadyRefered(toDoTwo);
-        assertTrue(result);
+        toDoOne.complete();
+
+        assertTrue(toDoOne.isReadyState());
+        assertTrue(toDoTwo.isReadyState());
+        log.debug(toDoTwo.getReferedToDos().get(0).isDone() + "");
+    }
+
+    @Test
+    public void notCompleteToDoTest() throws Exception {
+        ToDo toDoOne = makeToDo("todo_one");
+        ToDo toDoTwo = makeToDo("todo_two");
+
+        toDoOne.registerReferingToDo(toDoTwo);
+        toDoTwo.registerReferedToDo(toDoOne);
+
+        assertFalse(toDoTwo.isReadyState());
+        log.debug(toDoTwo.getReferedToDos().get(0).isDone() + "");
     }
 
 }
