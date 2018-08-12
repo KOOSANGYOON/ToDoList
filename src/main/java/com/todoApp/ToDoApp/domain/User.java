@@ -1,7 +1,6 @@
 package com.todoApp.ToDoApp.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.ser.Serializers;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +9,7 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class User extends Serializers.Base {
+public class User extends BaseEntity {
     @Id
     @GeneratedValue
     private Long id;
@@ -40,6 +39,9 @@ public class User extends Serializers.Base {
     //getter
     public String getUserId() {
         return userId;
+    }
+    public String getPasswd() {
+        return passwd;
     }
     public String getUserName() {
         return userName;
