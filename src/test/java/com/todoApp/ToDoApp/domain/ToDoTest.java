@@ -61,6 +61,16 @@ public class ToDoTest {
         toDoTwo.registerReferingToDo(toDoOne);
     }
 
+    @Test(expected = Exception.class)
+    public void registerToDoTest_alreadyRegistering() throws Exception {
+        ToDo toDoOne = makeToDo("todo_one");
+        ToDo toDoTwo = makeToDo("todo_two");
+
+        toDoOne.registerReferingToDo(toDoTwo);
+        toDoOne.registerReferingToDo(toDoTwo);
+        toDoTwo.registerReferedToDo(toDoOne);
+    }
+
     @Test
     public void completeToDoTest() throws Exception {
         ToDo toDoOne = makeToDo("todo_one");
@@ -86,6 +96,23 @@ public class ToDoTest {
 
         assertFalse(toDoTwo.isReadyState());
         log.debug(toDoTwo.getReferedToDos().get(0).isDone() + "");
+    }
+
+    @Test
+    public void deleteRefTest_success() throws Exception {
+        ToDo toDoOne = makeToDo("todo_one");
+        ToDo toDoTwo = makeToDo("todo_two");
+
+        toDoOne.registerReferingToDo(toDoTwo);
+        toDoTwo.registerReferedToDo(toDoOne);
+
+        toDoOne.deleteReferingToDo(toDoTwo);
+        toDoTwo.deleteReferedToDo((toDoOne));
+
+        assertEquals(toDoOne.getReferingToDos().size(), 0);
+        assertEquals(toDoTwo.getReferedToDos().size(), 0);
+        assertTrue(toDoOne.isReadyState());
+        assertTrue(toDoTwo.isReadyState());
     }
 
 }

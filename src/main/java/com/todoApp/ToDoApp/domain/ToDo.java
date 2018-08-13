@@ -3,9 +3,7 @@ package com.todoApp.ToDoApp.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 public class ToDo extends BaseEntity{
@@ -14,18 +12,21 @@ public class ToDo extends BaseEntity{
     @GeneratedValue
     private Long id;
 
+    @Column(unique = true)
     private String title;
 
     private boolean isDone = false;
 
     private boolean readyState = true;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(foreignKey = @ForeignKey(name = "referedToDos"))
     @JsonIgnore
     private List<ToDo> referedToDos = new ArrayList<>();
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(foreignKey = @ForeignKey(name = "referingToDos"))
+    @JsonIgnore
     private List<ToDo> referingToDos = new ArrayList<>();
 
     public ToDo() {}
@@ -34,24 +35,67 @@ public class ToDo extends BaseEntity{
     }
 
     //registered / registering
-    public void registerReferedToDo(ToDo toDo) {
+    public ToDo registerReferedToDo(ToDo toDo) {
         this.referedToDos.add(toDo);
         if (!isAllReferedToDoDone()) {
             readyState = false;
         }
+        return this;
     }
-    public void registerReferingToDo(ToDo toDo) throws Exception {
+    public ToDo registerReferingToDo(ToDo toDo) throws Exception {
+        if (isAlreadyRefering(toDo)) {
+            throw new Exception("This ToDo is Already exist.");
+        }
         if (isAlreadyReferedFrom(toDo)) {
-            throw new Exception("This ToDo is Already registered.");
+            throw new Exception("bi-direction occur.");
         }
         this.referingToDos.add(toDo);
+        return this;
     }
 
-    public void complete() throws Exception {
+    //delete refered / refering todo
+    public ToDo deleteReferedToDo(ToDo toDo) {
+        Iterator<ToDo> iterator = this.referedToDos.iterator();
+        while (iterator.hasNext()) {
+            ToDo referedToDo = iterator.next();
+
+            if (referedToDo.equals(toDo)) {
+                iterator.remove();
+            }
+        }
         if (!isAllReferedToDoDone()) {
+            readyState = false;
+        }
+        return this;
+    }
+    public ToDo deleteReferingToDo(ToDo toDo) {
+        Iterator<ToDo> iterator = this.referingToDos.iterator();
+        while (iterator.hasNext()) {
+            ToDo referingToDo = iterator.next();
+
+            if (referingToDo.equals(toDo)) {
+                iterator.remove();
+            }
+        }
+        return this;
+    }
+
+    private int findIndex(ArrayList<ToDo> list, ToDo toDo) throws NoSuchElementException {
+
+        throw new NoSuchElementException("there are no element.");
+    }
+
+    public ToDo complete() throws Exception {
+        if (!isAllReferedToDoDone()) {
+            this.readyState = false;
             throw new Exception("Not ready to done.");
         }
+//        if (!readyState) {
+//            throw new Exception("Not ready to done.");
+//        }
         this.isDone = true;
+        return this;
+
     }
 
     private boolean isAllReferedToDoDone() {
@@ -76,7 +120,19 @@ public class ToDo extends BaseEntity{
         return false;
     }
 
+    private boolean isAlreadyRefering(ToDo toDo) {
+        for (ToDo referingToDo : this.referingToDos) {
+            if (referingToDo.equals(toDo)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     //getter
+    public Long getId() {
+        return id;
+    }
     public String getTitle() {
         return title;
     }
@@ -91,6 +147,11 @@ public class ToDo extends BaseEntity{
     }
     public List<ToDo> getReferingToDos() {
         return referingToDos;
+    }
+
+    //setter
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     //equals / hashcode
@@ -109,5 +170,16 @@ public class ToDo extends BaseEntity{
     @Override
     public int hashCode() {
         return Objects.hash(id, title, isDone, readyState, referedToDos, referingToDos);
+    }
+    //toString
+    @Override
+    public String toString() {
+        return "ToDo{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", isDone=" + isDone +
+                ", readyState=" + readyState +
+                ", referedToDos=" + referedToDos +
+                '}';
     }
 }

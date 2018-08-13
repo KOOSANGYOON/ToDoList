@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>test</title>
 </head>
 <body>
 <a>|   id   |   created_date   |   modified_date   |   is_done   |   ready_status   |   title   |   refering_to_dos_id   |</a>
-{{# toDo }}
-{{title}}
-{{/ toDo }}
+{{#todos}}
+<li>{{id}} | {{createDate}} | {{modifiedDate}} | {{isDone}} | {{readyState}} | {{title}}</li>
+{{/todos}}
 </body>
 </html>
