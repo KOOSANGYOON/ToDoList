@@ -126,17 +126,25 @@ public class ToDoControllerTest {
         ResponseEntity<String> response2 = getResponse(String.format("/api/todos/%d/addref", toDo1.getId()), toDo3.getId());
         assertThat(response2.getStatusCode(), is(HttpStatus.OK));
 
-        System.out.println("~todoOne | refering : " + toDo1.getReferingToDos() + " | refered : " + toDo1.getReferedToDos());
-        System.out.println("~todoTwo | refering : " + toDo2.getReferingToDos() + " | refered : " + toDo2.getReferedToDos());
-        System.out.println("~todoThree | refering : " + toDo3.getReferingToDos() + " | refered : " + toDo3.getReferedToDos());
+//        while(true) {
+//
+//        }
 
         //check ref is success
         assertEquals(getOne(toDo1).getReferingToDos().getSize(), 2);
         assertThat(getOne(toDo1).getReferingToDoTitle(0), is(toDo2.getTitle()));
         assertThat(getOne(toDo1).getReferingToDoTitle(1), is(toDo3.getTitle()));
 
-        assertEquals(getOne(toDo2).getReferingToDos().getSize(), 1);
-        assertEquals(getOne(toDo3).getReferingToDos().getSize(), 1);
+        log.debug("~~" + getOne(toDo1).getReferedToDos().toString());
+        log.debug("~~" + getOne(toDo2).getReferedToDos().toString());
+        log.debug("~~" + getOne(toDo3).getReferedToDos().toString());
+
+        log.debug("~~" + getOne(toDo1).getReferingToDos().toString());
+        log.debug("~~" + getOne(toDo2).getReferingToDos().toString());
+        log.debug("~~" + getOne(toDo3).getReferingToDos().toString());
+
+        assertEquals(getOne(toDo2).getReferedToDos().getSize(), 1);
+        assertEquals(getOne(toDo3).getReferedToDos().getSize(), 1);
         assertThat(getOne(toDo2).getReferedToDoTitle(0), is(toDo1.getTitle()));
         assertThat(getOne(toDo3).getReferedToDoTitle(0), is(toDo1.getTitle()));
     }

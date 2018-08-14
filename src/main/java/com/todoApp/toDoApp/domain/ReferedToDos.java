@@ -8,7 +8,11 @@ import java.util.List;
 @Embeddable
 public class ReferedToDos {
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "ToDo_between_referedToDos",
+    joinColumns = @JoinColumn(name = "ToDoId"),
+    inverseJoinColumns = @JoinColumn(name = "referedToDoId"))
     private List<ToDo> referedToDos = new ArrayList<>();
 
     public ReferedToDos addReferedToDo(ToDo toDo) {
@@ -74,8 +78,16 @@ public class ReferedToDos {
 
     @Override
     public String toString() {
-        return "ReferedToDos{" +
-                "referedToDos=" + referedToDos +
-                '}';
+        return "ReferedToDos{" + referedToDos + '}';
+    }
+
+    public boolean isAlreadyRefered(ToDo toDo) {
+        for (ToDo referedToDo : referedToDos) {
+            if (referedToDo.equals(toDo)) {
+                return true;
+
+            }
+        }
+        return false;
     }
 }

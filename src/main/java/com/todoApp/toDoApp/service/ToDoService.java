@@ -30,10 +30,10 @@ public class ToDoService {
         toDo = toDo.registerReferingToDo(targetToDo);
         targetToDo = targetToDo.registerReferedToDo(toDo);
 
-        log.debug(toDo.getId() + "'s refering : " + toDo.getReferingToDos());
-        log.debug(toDo.getId() + "'s refered : " + toDo.getReferedToDos());
-        log.debug(targetToDo.getId() + "'s refering : " + targetToDo.getReferingToDos());
-        log.debug(targetToDo.getId() + "'s refered : " + targetToDo.getReferedToDos());
+//        log.debug(toDo.getId() + "'s refering : " + toDo.getReferingToDos());
+//        log.debug(toDo.getId() + "'s refered : " + toDo.getReferedToDos());
+//        log.debug(targetToDo.getId() + "'s refering : " + targetToDo.getReferingToDos());
+//        log.debug(targetToDo.getId() + "'s refered : " + targetToDo.getReferedToDos());
 
         return toDo;
     }

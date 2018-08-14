@@ -1,9 +1,6 @@
 package com.todoApp.toDoApp.domain;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Embeddable;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -11,7 +8,11 @@ import java.util.List;
 @Embeddable
 public class ReferingToDos {
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "ToDo_between_referingToDos",
+        joinColumns = @JoinColumn(name = "ToDoId"),
+        inverseJoinColumns = @JoinColumn(name = "referingToDoId"))
     private List<ToDo> referingToDos = new ArrayList<>();
 
     public ReferingToDos addReferingToDo(ToDo toDo) {

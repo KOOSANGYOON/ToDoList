@@ -27,7 +27,10 @@ public class ToDo extends BaseEntity{
     }
 
     //registered / registering
-    public ToDo registerReferedToDo(ToDo toDo) {
+    public ToDo registerReferedToDo(ToDo toDo) throws IllegalArgumentException {
+        if (referedToDos.isAlreadyRefered(toDo)) {
+            throw new IllegalArgumentException("This ToDo is Already exist.");
+        }
         this.referedToDos.addReferedToDo(toDo);
         return this;
     }
