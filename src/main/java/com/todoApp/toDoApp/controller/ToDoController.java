@@ -17,7 +17,7 @@ public class ToDoController {
     @Resource(name = "toDoService")
     private ToDoService toDoService;
 
-    @PostMapping("/create")
+    @PostMapping("/")
     public ToDo createToDo(@RequestBody String newTitle) {
         ToDo newToDo = null;
         try {
@@ -44,9 +44,11 @@ public class ToDoController {
             log.debug("cont " + toDo3.getId() + "'s refered : " + toDo3.getReferedToDos());
 
             return toDo;
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("bi-direction occurs.");
         } catch (Exception e) {
             e.printStackTrace();
-            throw new Exception("bi-direction occurs.");
+            throw new Exception("exception occur.");
         }
 
     }

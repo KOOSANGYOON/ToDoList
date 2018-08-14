@@ -20,8 +20,8 @@ public class ToDoTest {
         assertEquals(toDo.getTitle(), "todo_one");
         assertEquals(toDo.isDone(), false);
         assertEquals(toDo.isReadyState(), true);
-        assertEquals(toDo.getReferedToDos().size(), 0);
-        assertEquals(toDo.getReferingToDos().size(), 0);
+        assertEquals(toDo.getReferedToDos().getSize(), 0);
+        assertEquals(toDo.getReferingToDos().getSize(), 0);
         assertNotEquals(toDo.getFormattedCreatedDate(), "");
     }
 
@@ -44,8 +44,8 @@ public class ToDoTest {
         toDoOne.registerReferingToDo(toDoTwo);
         toDoTwo.registerReferedToDo(toDoOne);
 
-        assertEquals(toDoOne.getReferingToDos().size(), 1);
-        assertEquals(toDoTwo.getReferedToDos().size(), 1);
+
+        assertEquals(toDoTwo.getReferedToDos().getSize(), 1);
 
         assertTrue(toDoOne.isReadyState());
         assertFalse(toDoTwo.isReadyState());
@@ -83,7 +83,7 @@ public class ToDoTest {
 
         assertTrue(toDoOne.isReadyState());
         assertTrue(toDoTwo.isReadyState());
-        log.debug(toDoTwo.getReferedToDos().get(0).isDone() + "");
+        log.debug(toDoTwo.getReferedToDos().isAllReferedToDoDone() + "");
     }
 
     @Test
@@ -95,7 +95,7 @@ public class ToDoTest {
         toDoTwo.registerReferedToDo(toDoOne);
 
         assertFalse(toDoTwo.isReadyState());
-        log.debug(toDoTwo.getReferedToDos().get(0).isDone() + "");
+        log.debug(toDoTwo.getReferedToDos().isAllReferedToDoDone()  + "");
     }
 
     @Test
@@ -109,8 +109,8 @@ public class ToDoTest {
         toDoOne.deleteReferingToDo(toDoTwo);
         toDoTwo.deleteReferedToDo((toDoOne));
 
-        assertEquals(toDoOne.getReferingToDos().size(), 0);
-        assertEquals(toDoTwo.getReferedToDos().size(), 0);
+        assertEquals(toDoOne.getReferingToDos().getSize(), 0);
+        assertEquals(toDoTwo.getReferedToDos().getSize(), 0);
         assertTrue(toDoOne.isReadyState());
         assertTrue(toDoTwo.isReadyState());
     }

@@ -1,7 +1,5 @@
 package com.todoApp.toDoApp.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
 import java.util.*;
 
@@ -17,17 +15,11 @@ public class ToDo extends BaseEntity{
 
     private boolean isDone = false;
 
-    private boolean readyState = true;
+    @Embedded
+    private ReferedToDos referedToDos = new ReferedToDos();
 
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(foreignKey = @ForeignKey(name = "referedToDos"))
-    @JsonIgnore
-    private List<ToDo> referedToDos = new ArrayList<>();
-
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(foreignKey = @ForeignKey(name = "referingToDos"))
-    @JsonIgnore
-    private List<ToDo> referingToDos = new ArrayList<>();
+    @Embedded
+    private ReferingToDos referingToDos = new ReferingToDos();
 
     public ToDo() {}
     public ToDo(String title) {
@@ -36,97 +28,36 @@ public class ToDo extends BaseEntity{
 
     //registered / registering
     public ToDo registerReferedToDo(ToDo toDo) {
-        this.referedToDos.add(toDo);
-        if (!isAllReferedToDoDone()) {
-            readyState = false;
-        }
+        this.referedToDos.addReferedToDo(toDo);
         return this;
     }
-    public ToDo registerReferingToDo(ToDo toDo) throws Exception {
-        if (isAlreadyRefering(toDo)) {
-            throw new Exception("This ToDo is Already exist.");
+    public ToDo registerReferingToDo(ToDo toDo) throws IllegalArgumentException {
+        if (referingToDos.isAlreadyRefering(toDo)) {
+            throw new IllegalArgumentException("This ToDo is Already exist.");
         }
-        if (isAlreadyReferedFrom(toDo)) {
-            throw new Exception("bi-direction occur.");
+        if (referedToDos.isAlreadyReferedFrom(toDo)) {
+            throw new IllegalArgumentException("bi-direction occur.");
         }
-        this.referingToDos.add(toDo);
+        this.referingToDos.addReferingToDo(toDo);
         return this;
     }
 
     //delete refered / refering todo
     public ToDo deleteReferedToDo(ToDo toDo) {
-        Iterator<ToDo> iterator = this.referedToDos.iterator();
-        while (iterator.hasNext()) {
-            ToDo referedToDo = iterator.next();
-
-            if (referedToDo.equals(toDo)) {
-                iterator.remove();
-            }
-        }
-        if (!isAllReferedToDoDone()) {
-            readyState = false;
-        }
+        referedToDos.deleteReferedToDo(toDo);
         return this;
     }
     public ToDo deleteReferingToDo(ToDo toDo) {
-        Iterator<ToDo> iterator = this.referingToDos.iterator();
-        while (iterator.hasNext()) {
-            ToDo referingToDo = iterator.next();
-
-            if (referingToDo.equals(toDo)) {
-                iterator.remove();
-            }
-        }
+        referingToDos.deleteReferingToDo(toDo);
         return this;
-    }
-
-    private int findIndex(ArrayList<ToDo> list, ToDo toDo) throws NoSuchElementException {
-
-        throw new NoSuchElementException("there are no element.");
     }
 
     public ToDo complete() throws Exception {
-        if (!isAllReferedToDoDone()) {
-            this.readyState = false;
+        if (!referedToDos.isAllReferedToDoDone()) {
             throw new Exception("Not ready to done.");
         }
-//        if (!readyState) {
-//            throw new Exception("Not ready to done.");
-//        }
         this.isDone = true;
         return this;
-
-    }
-
-    private boolean isAllReferedToDoDone() {
-        if (referedToDos.isEmpty()) {
-            return true;
-        }
-        for (ToDo toDo : referedToDos) {
-            if (!toDo.isDone) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    //prevent bi-direction
-    private boolean isAlreadyReferedFrom(ToDo toDo) {
-        for (ToDo existToDo : this.referedToDos) {
-            if (existToDo.equals(toDo)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private boolean isAlreadyRefering(ToDo toDo) {
-        for (ToDo referingToDo : this.referingToDos) {
-            if (referingToDo.equals(toDo)) {
-                return true;
-            }
-        }
-        return false;
     }
 
     //getter
@@ -140,13 +71,19 @@ public class ToDo extends BaseEntity{
         return isDone;
     }
     public boolean isReadyState() {
-        return isAllReferedToDoDone();
+        return referedToDos.isReadyState();
     }
-    public List<ToDo> getReferedToDos() {
+    public ReferedToDos getReferedToDos() {
         return referedToDos;
     }
-    public List<ToDo> getReferingToDos() {
+    public ReferingToDos getReferingToDos() {
         return referingToDos;
+    }
+    public String getReferingToDoTitle(int index) {
+        return referingToDos.getValueOf(index);
+    }
+    public String getReferedToDoTitle(int index) {
+        return referedToDos.getValueOf(index);
     }
 
     //setter
@@ -161,7 +98,6 @@ public class ToDo extends BaseEntity{
         if (!(o instanceof ToDo)) return false;
         ToDo toDo = (ToDo) o;
         return isDone == toDo.isDone &&
-                readyState == toDo.readyState &&
                 Objects.equals(id, toDo.id) &&
                 Objects.equals(title, toDo.title) &&
                 Objects.equals(referedToDos, toDo.referedToDos) &&
@@ -169,7 +105,7 @@ public class ToDo extends BaseEntity{
     }
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, isDone, readyState, referedToDos, referingToDos);
+        return Objects.hash(id, title, isDone, referedToDos, referingToDos);
     }
     //toString
     @Override
@@ -178,7 +114,6 @@ public class ToDo extends BaseEntity{
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", isDone=" + isDone +
-                ", readyState=" + readyState +
                 ", referedToDos=" + referedToDos +
                 '}';
     }

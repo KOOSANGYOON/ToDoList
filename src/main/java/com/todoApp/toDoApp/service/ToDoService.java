@@ -23,17 +23,17 @@ public class ToDoService {
         return toDoRepository.save(newToDo);
     }
 
-    public ToDo addRef(Long id, Long referingId) throws Exception {
+    public ToDo addRef(Long id, Long referingId) throws Exception, IllegalArgumentException{
         ToDo toDo = toDoRepository.findOne(id);
         ToDo targetToDo = toDoRepository.findOne(referingId);
 
         toDo = toDo.registerReferingToDo(targetToDo);
         targetToDo = targetToDo.registerReferedToDo(toDo);
 
-//        log.debug(toDo.getId() + "'s refering : " + toDo.getReferingToDos());
-//        log.debug(toDo.getId() + "'s refered : " + toDo.getReferedToDos());
-//        log.debug(targetToDo.getId() + "'s refering : " + targetToDo.getReferingToDos());
-//        log.debug(targetToDo.getId() + "'s refered : " + targetToDo.getReferedToDos());
+        log.debug(toDo.getId() + "'s refering : " + toDo.getReferingToDos());
+        log.debug(toDo.getId() + "'s refered : " + toDo.getReferedToDos());
+        log.debug(targetToDo.getId() + "'s refering : " + targetToDo.getReferingToDos());
+        log.debug(targetToDo.getId() + "'s refered : " + targetToDo.getReferedToDos());
 
         return toDo;
     }
