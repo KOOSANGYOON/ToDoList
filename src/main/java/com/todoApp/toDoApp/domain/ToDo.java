@@ -27,11 +27,11 @@ public class ToDo extends BaseEntity{
     }
 
     //registered / registering
-    public ToDo registerReferedToDo(ToDo toDo) throws IllegalArgumentException {
-        if (referedToDos.isAlreadyRefered(toDo)) {
-            throw new IllegalArgumentException("This ToDo is Already exist.");
+    public ToDo registerReferedToDo(ToDo toDo) {
+        if (!referedToDos.isAlreadyRefered(toDo)) {
+            this.referedToDos.addReferedToDo(toDo);
         }
-        this.referedToDos.addReferedToDo(toDo);
+        updateModifiedDate();
         return this;
     }
     public ToDo registerReferingToDo(ToDo toDo) throws IllegalArgumentException {
@@ -41,17 +41,30 @@ public class ToDo extends BaseEntity{
         if (referedToDos.isAlreadyReferedFrom(toDo)) {
             throw new IllegalArgumentException("bi-direction occur.");
         }
+
+        List<ToDo> copiedToDos = copyReferedToDos();
+        toDo.referedToDos.preReferedBeforeRefering(copiedToDos);
+
         this.referingToDos.addReferingToDo(toDo);
+        updateModifiedDate();
         return this;
+    }
+
+    public List<ToDo> copyReferedToDos() {
+        List<ToDo> copiedToDos = referedToDos.copyReferedToDo();
+        copiedToDos.add(this);
+        return copiedToDos;
     }
 
     //delete refered / refering todo
     public ToDo deleteReferedToDo(ToDo toDo) {
         referedToDos.deleteReferedToDo(toDo);
+        updateModifiedDate();
         return this;
     }
     public ToDo deleteReferingToDo(ToDo toDo) {
         referingToDos.deleteReferingToDo(toDo);
+        updateModifiedDate();
         return this;
     }
 
@@ -60,7 +73,13 @@ public class ToDo extends BaseEntity{
             throw new Exception("Not ready to done.");
         }
         this.isDone = true;
+        updateModifiedDate();
         return this;
+    }
+
+    public void updateTitle(String title) {
+        this.title = title;
+        updateModifiedDate();
     }
 
     //getter
@@ -87,11 +106,6 @@ public class ToDo extends BaseEntity{
     }
     public String getReferedToDoTitle(int index) {
         return referedToDos.getValueOf(index);
-    }
-
-    //setter
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     //equals / hashcode

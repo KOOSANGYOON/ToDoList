@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e58a9564-6f77-4dc8-a51b-d5533591500c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferedToDos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferedToDos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferingToDos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferingToDos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,26 +68,63 @@
       <file leaf-file-name="ToDo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="97">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#478#479#0" expanded="true" />
                 <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#2450#2451#0" expanded="true" />
+                <element signature="e#2475#2476#0" expanded="true" />
+                <element signature="e#2506#2507#0" expanded="true" />
+                <element signature="e#2534#2535#0" expanded="true" />
+                <element signature="e#2564#2565#0" expanded="true" />
+                <element signature="e#2593#2594#0" expanded="true" />
+                <element signature="e#2629#2630#0" expanded="true" />
+                <element signature="e#2679#2680#0" expanded="true" />
+                <element signature="e#2723#2724#0" expanded="true" />
+                <element signature="e#2758#2759#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2840#2841#0" expanded="true" />
+                <element signature="e#2892#2893#0" expanded="true" />
+                <element signature="e#2946#2947#0" expanded="true" />
+                <element signature="e#2997#2998#0" expanded="true" />
+                <element signature="e#3050#3051#0" expanded="true" />
+                <element signature="e#3563#3564#0" expanded="true" />
+                <element signature="e#3646#3647#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReferedToDos.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferedToDos.java">
+      <file leaf-file-name="ToDoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="197">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2070#2071#0" expanded="true" />
-                <element signature="e#2129#2130#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToDoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="127" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToDoController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +133,8 @@
       <file leaf-file-name="ToDoControllerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="117" column="39" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
+            <state relative-caret-position="97">
+              <caret line="207" column="43" selection-start-line="207" selection-start-column="43" selection-end-line="207" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1183#1184#0" expanded="true" />
@@ -100,11 +144,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToDoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java">
+      <file leaf-file-name="ReferedToDos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferedToDos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="158">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersistentBag.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar!/org/hibernate/collection/internal/PersistentBag.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="235" selection-start-line="235" selection-end-line="235" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReferingToDos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferingToDos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,15 +273,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDoRef.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferingToDos.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/BaseEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferedToDos.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java" />
       </list>
     </option>
   </component>
@@ -446,7 +512,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ToDoControllerTest.addRefTest_success_three_todos">
+  <component name="RunManager" selected="JUnit.ToDoControllerTest.addrefTest_fail_bidirectional_chain_problem">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -473,7 +539,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ToDoControllerTest.addRefTest_fail_addref_double" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToDoControllerTest.addrefTest_fail_bidirectional_chain_problem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
@@ -485,7 +551,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
       <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
-      <option name="METHOD_NAME" value="addRefTest_fail_addref_double" />
+      <option name="METHOD_NAME" value="addrefTest_fail_bidirectional_chain_problem" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -496,7 +562,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ToDoControllerTest.addRefTest_fail_bi_direction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToDoControllerTest.completeToDoTest_fail_referedToDo_not_complete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
@@ -508,7 +574,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
       <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
-      <option name="METHOD_NAME" value="addRefTest_fail_bi_direction" />
+      <option name="METHOD_NAME" value="completeToDoTest_fail_referedToDo_not_complete" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -519,7 +585,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ToDoControllerTest.addRefTest_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToDoControllerTest.deleteRefTest_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
@@ -531,7 +597,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
       <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
-      <option name="METHOD_NAME" value="addRefTest_success" />
+      <option name="METHOD_NAME" value="deleteRefTest_success" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -542,19 +608,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ToDoControllerTest.addRefTest_success_three_todos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToDoTest.copyReferedToDosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.todoApp.toDoApp.web.*" />
+          <option name="PATTERN" value="com.todoApp.toDoApp.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
-      <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
-      <option name="METHOD_NAME" value="addRefTest_success_three_todos" />
+      <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.domain.ToDoTest" />
+      <option name="METHOD_NAME" value="copyReferedToDosTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -609,19 +675,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ToDoAppApplication" />
-      <item itemvalue="JUnit.ToDoControllerTest.addRefTest_success" />
-      <item itemvalue="JUnit.ToDoControllerTest.addRefTest_fail_bi_direction" />
+      <item itemvalue="JUnit.ToDoControllerTest.deleteRefTest_success" />
+      <item itemvalue="JUnit.ToDoControllerTest.completeToDoTest_fail_referedToDo_not_complete" />
       <item itemvalue="JUnit.ToDoControllerTest" />
-      <item itemvalue="JUnit.ToDoControllerTest.addRefTest_fail_addref_double" />
-      <item itemvalue="JUnit.ToDoControllerTest.addRefTest_success_three_todos" />
+      <item itemvalue="JUnit.ToDoTest.copyReferedToDosTest" />
+      <item itemvalue="JUnit.ToDoControllerTest.addrefTest_fail_bidirectional_chain_problem" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ToDoControllerTest.addRefTest_success_three_todos" />
-        <item itemvalue="JUnit.ToDoControllerTest.addRefTest_success" />
-        <item itemvalue="JUnit.ToDoControllerTest.addRefTest_fail_addref_double" />
-        <item itemvalue="JUnit.ToDoControllerTest.addRefTest_fail_bi_direction" />
+        <item itemvalue="JUnit.ToDoControllerTest.addrefTest_fail_bidirectional_chain_problem" />
         <item itemvalue="JUnit.ToDoControllerTest" />
+        <item itemvalue="JUnit.ToDoControllerTest.deleteRefTest_success" />
+        <item itemvalue="JUnit.ToDoTest.copyReferedToDosTest" />
+        <item itemvalue="JUnit.ToDoControllerTest.completeToDoTest_fail_referedToDo_not_complete" />
       </list>
     </recent_temporary>
   </component>
@@ -643,39 +709,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 14m 50s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest - 2018.08.15 at 04h 33m 23s.xml">
+      <configuration name="ToDoControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 15m 34s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest - 2018.08.15 at 04h 34m 49s.xml">
+      <configuration name="ToDoControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 20m 16s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest - 2018.08.15 at 04h 36m 53s.xml">
+      <configuration name="ToDoControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 22m 47s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest - 2018.08.15 at 04h 42m 04s.xml">
+      <configuration name="ToDoControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 33m 38s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest - 2018.08.15 at 04h 42m 29s.xml">
+      <configuration name="ToDoControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 34m 19s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_deleteRefTest_success - 2018.08.15 at 04h 45m 05s.xml">
+      <configuration name="ToDoControllerTest.deleteRefTest_success" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 34m 42s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_deleteRefTest_success - 2018.08.15 at 04h 45m 43s.xml">
+      <configuration name="ToDoControllerTest.deleteRefTest_success" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 35m 11s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_deleteRefTest_success - 2018.08.15 at 04h 49m 17s.xml">
+      <configuration name="ToDoControllerTest.deleteRefTest_success" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 36m 27s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest - 2018.08.15 at 04h 49m 43s.xml">
+      <configuration name="ToDoControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.15 at 01h 38m 01s.xml">
-      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addrefTest_fail_bidirectional_chain_problem - 2018.08.15 at 04h 53m 55s.xml">
+      <configuration name="ToDoControllerTest.addrefTest_fail_bidirectional_chain_problem" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112580000" />
+    <option name="totallyTimeSpent" value="119395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -700,23 +766,52 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.49931034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38896552" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965517" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.25767368" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.25767368" />
       <window_info anchor="bottom" id="Problems" order="8" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.5006896" side_tool="true" weight="0.2536349" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="DB Browser" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.49931034" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.25767368" />
+      <window_info id="Favorites" order="2" sideWeight="0.5006896" side_tool="true" weight="0.2536349" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Problems" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965517" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24959612" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.32965517" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24959612" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32965517" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -736,15 +831,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java</url>
-          <line>44</line>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="28" />
+      <option name="time" value="29" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -762,20 +863,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar!/org/springframework/test/context/junit4/statements/SpringRepeat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -832,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -850,16 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="2" column="103" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferingToDos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,18 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-            <element signature="e#2270#2271#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,20 +1157,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="338">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="127" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar!/org/hibernate/collection/internal/PersistentBag.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferedToDos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferingToDos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#2450#2451#0" expanded="true" />
+            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#2506#2507#0" expanded="true" />
+            <element signature="e#2534#2535#0" expanded="true" />
+            <element signature="e#2564#2565#0" expanded="true" />
+            <element signature="e#2593#2594#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#2723#2724#0" expanded="true" />
+            <element signature="e#2758#2759#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2840#2841#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#2997#2998#0" expanded="true" />
+            <element signature="e#3050#3051#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+            <element signature="e#3646#3647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="117" column="39" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
+        <state relative-caret-position="97">
+          <caret line="207" column="43" selection-start-line="207" selection-start-column="43" selection-end-line="207" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1183#1184#0" expanded="true" />
@@ -1121,26 +1250,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="108">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ReferedToDos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2070#2071#0" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
           </folding>
         </state>
       </provider>

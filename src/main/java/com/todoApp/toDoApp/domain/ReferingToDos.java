@@ -8,7 +8,6 @@ import java.util.List;
 @Embeddable
 public class ReferingToDos {
 
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "ToDo_between_referingToDos",
         joinColumns = @JoinColumn(name = "ToDoId"),

@@ -33,15 +33,6 @@ public class ToDoController {
     public ToDo addRef(@PathVariable Long id, @RequestBody Long referingId) throws Exception {
         try {
             ToDo toDo = toDoService.addRef(id, referingId);
-
-//            ToDo toDo2 = toDoService.findOne(id);
-//            ToDo toDo3 = toDoService.findOne(referingId);
-
-//            log.debug("cont " + toDo2.getId() + "'s refering : " + toDo2.getReferingToDos());
-//            log.debug("cont " + toDo2.getId() + "'s refered : " + toDo2.getReferedToDos());
-//            log.debug("cont " + toDo3.getId() + "'s refering : " + toDo3.getReferingToDos());
-//            log.debug("cont " + toDo3.getId() + "'s refered : " + toDo3.getReferedToDos());
-
             return toDo;
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException("bi-direction occurs.");

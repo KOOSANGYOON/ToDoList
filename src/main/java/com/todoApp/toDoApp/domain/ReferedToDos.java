@@ -8,7 +8,6 @@ import java.util.List;
 @Embeddable
 public class ReferedToDos {
 
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "ToDo_between_referedToDos",
     joinColumns = @JoinColumn(name = "ToDoId"),
@@ -27,6 +26,22 @@ public class ReferedToDos {
 
             if (referedToDo.equals(toDo)) {
                 iterator.remove();
+            }
+        }
+    }
+
+    public List<ToDo> copyReferedToDo() {
+        List<ToDo> copiedToDos = new ArrayList<>();
+        for (ToDo referedToDo : referedToDos) {
+            copiedToDos.add(referedToDo);
+        }
+        return copiedToDos;
+    }
+
+    public void preReferedBeforeRefering(List<ToDo> copiedToDos) {
+        for (ToDo copiedToDo : copiedToDos) {
+            if (!referedToDos.contains(copiedToDo)) {
+                referedToDos.add(copiedToDo);
             }
         }
     }

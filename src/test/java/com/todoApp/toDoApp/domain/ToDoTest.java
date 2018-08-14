@@ -115,4 +115,17 @@ public class ToDoTest {
         assertTrue(toDoTwo.isReadyState());
     }
 
+//    @Test
+//    public void copyReferedToDosTest() {
+//        ToDo toDoOne = makeToDo("todo_one");
+//        ToDo toDoTwo = makeToDo("todo_two");
+//
+//        toDoOne.registerReferedToDo(toDoTwo);
+//        toDoOne.copyReferedToDos();
+//
+//        assertEquals(toDoOne.registerReferedToDo(toDoTwo), toDoOne.copyReferedToDos().get(0));
+//
+//    }
+
+
 }

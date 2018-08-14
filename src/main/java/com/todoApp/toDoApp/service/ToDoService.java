@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
@@ -40,7 +39,7 @@ public class ToDoService {
 
     public ToDo updateToDo(Long id, String title) {
         ToDo targetToDo = toDoRepository.findOne(id);
-        targetToDo.setTitle(title);
+        targetToDo.updateTitle(title);
         return targetToDo;
     }
 
