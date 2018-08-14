@@ -1,4 +1,4 @@
-package com.todoApp.ToDoApp;
+package com.todoApp.toDoApp;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

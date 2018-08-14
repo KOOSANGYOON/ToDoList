@@ -1,7 +1,7 @@
-package com.todoApp.ToDoApp.controller;
+package com.todoApp.toDoApp.controller;
 
-import com.todoApp.ToDoApp.domain.ToDo;
-import com.todoApp.ToDoApp.service.ToDoService;
+import com.todoApp.toDoApp.domain.ToDo;
+import com.todoApp.toDoApp.service.ToDoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -31,12 +31,24 @@ public class ToDoController {
 
     @PostMapping("/{id}/addref")
     public ToDo addRef(@PathVariable Long id, @RequestBody Long referingId) throws Exception {
+        ToDo toDo = null;
         try {
-            return toDoService.addRef(id, referingId);
+            toDo = toDoService.addRef(id, referingId);
+
+            ToDo toDo2 = toDoService.findOne(id);
+            ToDo toDo3 = toDoService.findOne(referingId);
+
+            log.debug("cont " + toDo2.getId() + "'s refering : " + toDo2.getReferingToDos());
+            log.debug("cont " + toDo2.getId() + "'s refered : " + toDo2.getReferedToDos());
+            log.debug("cont " + toDo3.getId() + "'s refering : " + toDo3.getReferingToDos());
+            log.debug("cont " + toDo3.getId() + "'s refered : " + toDo3.getReferedToDos());
+
+            return toDo;
         } catch (Exception e) {
             e.printStackTrace();
             throw new Exception("bi-direction occurs.");
         }
+
     }
 
     @PutMapping("/{id}")

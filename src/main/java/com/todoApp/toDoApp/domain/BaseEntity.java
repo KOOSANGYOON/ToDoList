@@ -1,4 +1,4 @@
-package com.todoApp.ToDoApp.domain;
+package com.todoApp.toDoApp.domain;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

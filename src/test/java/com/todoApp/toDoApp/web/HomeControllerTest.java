@@ -1,4 +1,4 @@
-package com.todoApp.ToDoApp.web;
+package com.todoApp.toDoApp.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

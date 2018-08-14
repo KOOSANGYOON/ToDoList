@@ -1,6 +1,6 @@
-package com.todoApp.ToDoApp.controller;
+package com.todoApp.toDoApp.controller;
 
-import com.todoApp.ToDoApp.domain.ToDoRepository;
+import com.todoApp.toDoApp.domain.ToDoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +20,13 @@ public class HomeController {
         model.addAttribute("todos", toDoRepository.findAll());
         return "index";
     }
+
+//    @GetMapping("")
+//    public String main(Model model, Pageable pageable) {
+//        Page<ToDo> toDoPage = toDoRepository.findAll(pageable);
+//        model.addAttribute("todos", toDoPage);
+////        model.addAttribute("todos", toDoRepository.findAll());
+//        return "index";
+//    }
 
 }

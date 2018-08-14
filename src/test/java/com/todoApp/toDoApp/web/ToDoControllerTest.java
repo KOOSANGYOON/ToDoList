@@ -1,7 +1,7 @@
-package com.todoApp.ToDoApp.web;
+package com.todoApp.toDoApp.web;
 
-import com.todoApp.ToDoApp.domain.ToDo;
-import com.todoApp.ToDoApp.domain.ToDoRepository;
+import com.todoApp.toDoApp.domain.ToDo;
+import com.todoApp.toDoApp.domain.ToDoRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -130,12 +130,16 @@ public class ToDoControllerTest {
         assertThat(toDoRepository.findOne(todoTwo.getId()).getReferedToDos().get(0).getTitle(), is(todoOne.getTitle()));   //title == unique
     }
 
+    private ResponseEntity<String> makeResponse(String title) {
+        ResponseEntity<String> response = template.postForEntity("/api/todos/create", title,  String.class);
+        assertThat(response.getStatusCode(), is(HttpStatus.OK));
+        return response;
+    }
+
     @Test
-    @Transactional
     public void addRefTest_success_three_todos() {
         //create two todos
-        ResponseEntity<String> response1 = template.postForEntity("/api/todos/create", "successToDo",  String.class);
-        assertThat(response1.getStatusCode(), is(HttpStatus.OK));
+        makeResponse("successToDo");
         ResponseEntity<String> response2 = template.postForEntity("/api/todos/create", "successToDo2",  String.class);
         assertThat(response2.getStatusCode(), is(HttpStatus.OK));
         ResponseEntity<String> response3 = template.postForEntity("/api/todos/create", "successToDo3",  String.class);
@@ -153,12 +157,13 @@ public class ToDoControllerTest {
         ResponseEntity<String> response5 = template.postForEntity(url, todoThree.getId(),  String.class);
         assertThat(response5.getStatusCode(), is(HttpStatus.OK));
 
-        todoOne = toDoRepository.findOne(todoOne.getId());
-        todoTwo = toDoRepository.findOne(todoTwo.getId());
-        todoThree = toDoRepository.findOne(todoThree.getId());
-        System.out.println("~todoOne | refering : " + todoOne.getReferingToDos() + " | refered : " + todoOne.getReferedToDos());
-        System.out.println("~todoTwo | refering : " + todoTwo.getReferingToDos() + " | refered : " + todoTwo.getReferedToDos());
-        System.out.println("~todoThree | refering : " + todoThree.getReferingToDos() + " | refered : " + todoThree.getReferedToDos());
+        ToDo test1 = toDoRepository.findByTitle("successToDo");
+        ToDo test2 = toDoRepository.findByTitle("successToDo2");
+        ToDo test3 = toDoRepository.findByTitle("successToDo3");
+
+        System.out.println("~todoOne | refering : " + test1.getReferingToDos() + " | refered : " + test1.getReferedToDos());
+        System.out.println("~todoTwo | refering : " + test2.getReferingToDos() + " | refered : " + test2.getReferedToDos());
+        System.out.println("~todoThree | refering : " + test3.getReferingToDos() + " | refered : " + test3.getReferedToDos());
 
         //check ref is success
         assertEquals(toDoRepository.findOne(todoOne.getId()).getReferingToDos().size(), 2);     //size is 2.

@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e58a9564-6f77-4dc8-a51b-d5533591500c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/AcceptanceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/controller/UserAcceptanceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/domain/ToDoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/domain/ToDoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/web/ApiToDoAcceptanceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/ToDoAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/ToDoAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/HtmlFormDataBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/HtmlFormDataBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/ToDoAppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/ToDoAppApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/domain/ToDoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/web/HomeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/HomeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/web/ToDoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,54 +73,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ToDo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2872#2873#0" expanded="true" />
-                <element signature="e#2906#2907#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToDoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/domain/ToDoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="101" column="23" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToDoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/ToDoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            <state relative-caret-position="507">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToDoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ToDoControllerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/web/ToDoControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="245" column="32" selection-start-line="245" selection-start-column="32" selection-end-line="245" selection-end-column="32" />
+            <state relative-caret-position="156">
+              <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToDoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToDoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="42" column="93" lean-forward="true" selection-start-line="42" selection-start-column="93" selection-end-line="42" selection-end-column="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,10 +150,17 @@
       <find>todoOne</find>
       <find>s refering :</find>
       <find>refering :</find>
-      <find>refering :</find>
       <find>test Two</find>
+      <find>refergin :</find>
       <find>user</find>
+      <find>refering :</find>
+      <find>query ST</find>
+      <find>query END</find>
+      <find>query START</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -205,16 +197,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/logback.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/web/HomeControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/domain/ToDoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/ToDoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDo.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/web/ToDoControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java" />
       </list>
     </option>
   </component>
@@ -271,7 +268,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="toDoApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ToDoListApp" type="b2602c69:ProjectViewProjectNode" />
@@ -279,7 +276,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="toDoApp" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,7 +285,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="toDoApp" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -297,7 +294,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="toDoApp" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -360,7 +357,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="toDoApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ToDoListApp" type="b2602c69:ProjectViewProjectNode" />
@@ -368,7 +365,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="toDoApp" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -377,7 +374,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="toDoApp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -412,7 +409,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -440,24 +437,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ToDoControllerTest.completeToDoTest_fail_referedToDo_not_complete">
+  <component name="RunManager" selected="JUnit.ToDoControllerTest.addRefTest_success_three_todos">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ToDoControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToDoControllerTest.addRefTest_success_three_todos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.todoApp.ToDoApp.web.*" />
+          <option name="PATTERN" value="com.todoApp.toDoApp.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.todoApp.ToDoApp.web" />
-      <option name="MAIN_CLASS_NAME" value="com.todoApp.ToDoApp.web.ToDoControllerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
+      <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
+      <option name="METHOD_NAME" value="addRefTest_success_three_todos" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -471,14 +468,14 @@
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.todoApp.ToDoApp.web.*" />
+          <option name="PATTERN" value="com.todoApp.toDoApp.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.todoApp.ToDoApp.web" />
-      <option name="MAIN_CLASS_NAME" value="com.todoApp.ToDoApp.web.ToDoControllerTest" />
+      <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
+      <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
       <option name="METHOD_NAME" value="completeToDoTest_fail_referedToDo_not_complete" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -494,14 +491,14 @@
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.todoApp.ToDoApp.web.*" />
+          <option name="PATTERN" value="com.todoApp.toDoApp.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.todoApp.ToDoApp.web" />
-      <option name="MAIN_CLASS_NAME" value="com.todoApp.ToDoApp.web.ToDoControllerTest" />
+      <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
+      <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
       <option name="METHOD_NAME" value="completeToDoTest_success" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -517,14 +514,14 @@
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.todoApp.ToDoApp.web.*" />
+          <option name="PATTERN" value="com.todoApp.toDoApp.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.todoApp.ToDoApp.web" />
-      <option name="MAIN_CLASS_NAME" value="com.todoApp.ToDoApp.web.ToDoControllerTest" />
+      <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.web" />
+      <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.web.ToDoControllerTest" />
       <option name="METHOD_NAME" value="deleteRefTest_success" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -536,20 +533,20 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ToDoTest.deleteRefTest_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToDoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.todoApp.ToDoApp.domain.*" />
+          <option name="PATTERN" value="com.todoApp.toDoApp.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.todoApp.ToDoApp.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.todoApp.ToDoApp.domain.ToDoTest" />
-      <option name="METHOD_NAME" value="deleteRefTest_success" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.todoApp.toDoApp.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.todoApp.toDoApp.domain.ToDoTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -577,7 +574,7 @@
     </configuration>
     <configuration name="ToDoAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ToDoList" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.todoApp.ToDoApp.ToDoAppApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.todoApp.toDoApp.ToDoAppApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -603,19 +600,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ToDoAppApplication" />
-      <item itemvalue="JUnit.ToDoControllerTest" />
-      <item itemvalue="JUnit.ToDoTest.deleteRefTest_success" />
       <item itemvalue="JUnit.ToDoControllerTest.deleteRefTest_success" />
       <item itemvalue="JUnit.ToDoControllerTest.completeToDoTest_success" />
       <item itemvalue="JUnit.ToDoControllerTest.completeToDoTest_fail_referedToDo_not_complete" />
+      <item itemvalue="JUnit.ToDoTest" />
+      <item itemvalue="JUnit.ToDoControllerTest.addRefTest_success_three_todos" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ToDoControllerTest.addRefTest_success_three_todos" />
+        <item itemvalue="JUnit.ToDoTest" />
         <item itemvalue="JUnit.ToDoControllerTest.completeToDoTest_fail_referedToDo_not_complete" />
         <item itemvalue="JUnit.ToDoControllerTest.completeToDoTest_success" />
         <item itemvalue="JUnit.ToDoControllerTest.deleteRefTest_success" />
-        <item itemvalue="JUnit.ToDoTest.deleteRefTest_success" />
-        <item itemvalue="JUnit.ToDoControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -631,44 +628,44 @@
       <updated>1533793979109</updated>
       <workItem from="1533793980978" duration="5023000" />
       <workItem from="1533802859786" duration="26161000" />
-      <workItem from="1534033741848" duration="51806000" />
+      <workItem from="1534033741848" duration="59253000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ToDoControllerTest - 2018.08.14 at 01h 58m 38s.xml">
-      <configuration name="ToDoControllerTest" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 15h 58m 17s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoTest_deleteRefTest_success - 2018.08.14 at 02h 21m 07s.xml">
-      <configuration name="ToDoTest.deleteRefTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 00m 48s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_deleteRefTest_success - 2018.08.14 at 02h 22m 36s.xml">
-      <configuration name="ToDoControllerTest.deleteRefTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 06m 53s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_deleteRefTest_success - 2018.08.14 at 02h 26m 07s.xml">
-      <configuration name="ToDoControllerTest.deleteRefTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 07m 12s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_completeToDoTest_success - 2018.08.14 at 02h 37m 30s.xml">
-      <configuration name="ToDoControllerTest.completeToDoTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 10m 21s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_completeToDoTest_success - 2018.08.14 at 02h 38m 34s.xml">
-      <configuration name="ToDoControllerTest.completeToDoTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 11m 46s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_completeToDoTest_success - 2018.08.14 at 02h 40m 18s.xml">
-      <configuration name="ToDoControllerTest.completeToDoTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 13m 21s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_completeToDoTest_success - 2018.08.14 at 02h 41m 19s.xml">
-      <configuration name="ToDoControllerTest.completeToDoTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 15m 53s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_completeToDoTest_success - 2018.08.14 at 02h 42m 41s.xml">
-      <configuration name="ToDoControllerTest.completeToDoTest_success" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 16m 45s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ToDoControllerTest_completeToDoTest_fail_referedToDo_not_complete - 2018.08.14 at 02h 45m 55s.xml">
-      <configuration name="ToDoControllerTest.completeToDoTest_fail_referedToDo_not_complete" configurationId="JUnit" />
+    <history-entry file="ToDoControllerTest_addRefTest_success_three_todos - 2018.08.14 at 16h 18m 26s.xml">
+      <configuration name="ToDoControllerTest.addRefTest_success_three_todos" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82990000" />
+    <option name="totallyTimeSpent" value="90437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -694,19 +691,19 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47586206" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.52827585" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965517" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.2536349" />
       <window_info anchor="bottom" id="Problems" order="8" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.5006896" side_tool="true" weight="0.2536349" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" weight="0.32965517" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24959612" />
@@ -721,32 +718,29 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <condition expression="referingId==6L" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java</url>
-          <line>36</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java</url>
+          <line>163</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <condition expression="referingId==6L" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java</url>
-          <line>28</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java</url>
+          <line>164</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <condition expression="referingId==6L" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java</url>
-          <line>29</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java</url>
+          <line>165</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="15" />
+      <option name="time" value="23" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -764,289 +758,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/HtmlFormDataBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar!/org/hibernate/collection/internal/PersistentBag.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="254" selection-start-line="254" selection-end-line="254" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#1507#1671#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="515" selection-start-line="515" selection-end-line="515" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="465" selection-start-line="465" selection-end-line="465" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="411" selection-start-line="411" selection-end-line="411" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="407" selection-start-line="407" selection-end-line="407" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.20/tomcat-embed-websocket-8.5.20.jar!/org/apache/tomcat/websocket/server/WsFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="34" column="157" selection-start-line="34" selection-start-column="157" selection-end-line="34" selection-end-column="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/HttpPutFormContentFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/HiddenHttpMethodFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/CharacterEncodingFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardWrapperValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="204" selection-start-line="204" selection-end-line="204" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardContextValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="317" selection-start-line="317" selection-end-line="317" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardHostValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/valves/ErrorReportValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/rakugakibox/spring/boot/logback-access-spring-boot-starter/2.1.0/logback-access-spring-boot-starter-2.1.0.jar!/net/rakugakibox/spring/boot/logback/access/tomcat/LogbackAccessTomcatValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/tomcat/util/threads/TaskThread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/tomcat/util/net/SocketProcessorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/tomcat/util/net/NioEndpoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="384" selection-start-line="384" selection-end-line="384" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/coyote/AbstractProtocol.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="852" selection-start-line="852" selection-end-line="852" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/coyote/AbstractProcessorLight.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/coyote/http11/Http11Processor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="496" selection-start-line="496" selection-end-line="496" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/connector/CoyoteAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="412" selection-start-line="412" selection-end-line="412" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardEngineValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1100,46 +811,317 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/domain/ToDoTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar!/org/springframework/data/domain/Slice.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="101" column="23" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+        <state relative-caret-position="-8">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/controller/ToDoController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar!/org/springframework/data/domain/Page.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        <state relative-caret-position="78">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/domain/ToDoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-access.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#1507#1671#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="511" selection-start-line="511" selection-end-line="511" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="454" selection-start-line="454" selection-end-line="454" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="405" selection-start-line="405" selection-end-line="405" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.20/tomcat-embed-websocket-8.5.20.jar!/org/apache/tomcat/websocket/server/WsFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/HttpPutFormContentFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/HiddenHttpMethodFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/CharacterEncodingFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardWrapperValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardContextValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="317" selection-start-line="317" selection-end-line="317" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/connector/CoyoteAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/tomcat/util/net/SocketProcessorBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/tomcat/util/net/NioEndpoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="355" selection-start-line="355" selection-end-line="355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/coyote/AbstractProtocol.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="752" selection-start-line="752" selection-end-line="752" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/coyote/AbstractProcessorLight.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/coyote/http11/Http11Processor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="428" selection-start-line="428" selection-end-line="428" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/rakugakibox/spring/boot/logback-access-spring-boot-starter/2.1.0/logback-access-spring-boot-starter-2.1.0.jar!/net/rakugakibox/spring/boot/logback/access/tomcat/LogbackAccessTomcatValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardEngineValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/valves/ErrorReportValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/StandardHostValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/domain/ToDo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/service/ToDoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/service/ToDoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        <state relative-caret-position="-170">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/ToDoApp/domain/ToDo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/todoApp/toDoApp/controller/ToDoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+        <state relative-caret-position="197">
+          <caret line="42" column="93" lean-forward="true" selection-start-line="42" selection-start-column="93" selection-end-line="42" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2872#2873#0" expanded="true" />
-            <element signature="e#2906#2907#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/ToDoApp/web/ToDoControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/todoApp/toDoApp/web/ToDoControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="245" column="32" selection-start-line="245" selection-start-column="32" selection-end-line="245" selection-end-column="32" />
+        <state relative-caret-position="156">
+          <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
         </state>
       </provider>
     </entry>

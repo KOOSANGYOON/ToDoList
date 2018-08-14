@@ -7,7 +7,7 @@
 		</layout>
 	</appender>
 	
-	<logger name="todoApp" level="DEBUG" />
+	<logger name="com.todoApp.toDoApp" level="DEBUG" />
 	
 	<root level="INFO">
 		<appender-ref ref="STDOUT" />

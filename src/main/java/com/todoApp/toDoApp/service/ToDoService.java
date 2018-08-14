@@ -1,12 +1,13 @@
-package com.todoApp.ToDoApp.service;
+package com.todoApp.toDoApp.service;
 
-import com.todoApp.ToDoApp.domain.ToDo;
-import com.todoApp.ToDoApp.domain.ToDoRepository;
+import com.todoApp.toDoApp.domain.ToDo;
+import com.todoApp.toDoApp.domain.ToDoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
@@ -29,10 +30,10 @@ public class ToDoService {
         toDo = toDo.registerReferingToDo(targetToDo);
         targetToDo = targetToDo.registerReferedToDo(toDo);
 
-//        System.out.println(toDo.getId() + "'s refering : " + toDo.getReferingToDos());
-//        System.out.println(toDo.getId() + "'s refered : " + toDo.getReferedToDos());
-//        System.out.println(targetToDo.getId() + "'s refering : " + targetToDo.getReferingToDos());
-//        System.out.println(targetToDo.getId() + "'s refered : " + targetToDo.getReferedToDos());
+//        log.debug(toDo.getId() + "'s refering : " + toDo.getReferingToDos());
+//        log.debug(toDo.getId() + "'s refered : " + toDo.getReferedToDos());
+//        log.debug(targetToDo.getId() + "'s refering : " + targetToDo.getReferingToDos());
+//        log.debug(targetToDo.getId() + "'s refered : " + targetToDo.getReferedToDos());
 
         return toDo;
     }
@@ -56,6 +57,10 @@ public class ToDoService {
     public ToDo completeToDo(Long id) throws Exception {
         ToDo toDo = toDoRepository.findOne(id);
         return toDo.complete();
+    }
+
+    public ToDo findOne(Long id) {
+        return toDoRepository.findOne(id);
     }
 }
 

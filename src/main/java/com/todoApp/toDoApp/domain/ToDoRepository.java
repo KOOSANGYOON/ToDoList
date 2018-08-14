@@ -1,7 +1,9 @@
-package com.todoApp.ToDoApp.domain;
+package com.todoApp.toDoApp.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ToDoRepository extends JpaRepository<ToDo, Long> {
     ToDo findByTitle(String title);
+
+//    Page<ToDo> findAll(Pageable pageable);
 }

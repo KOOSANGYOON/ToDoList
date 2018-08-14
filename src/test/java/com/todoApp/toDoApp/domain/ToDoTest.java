@@ -1,4 +1,4 @@
-package com.todoApp.ToDoApp.domain;
+package com.todoApp.toDoApp.domain;
 
 import org.junit.Test;
 import org.slf4j.Logger;
