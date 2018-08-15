@@ -17,7 +17,7 @@ function addToDo(e) {
             window.location.reload();
     }).fail(function createToDoFail() {
             console.log("fail");
-            alert("이름이 중복됩니다.");
+            alert("이름을 다시 설정해주세요.");
     });
 }
 

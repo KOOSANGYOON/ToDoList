@@ -12,7 +12,7 @@
         <div class="content-head">
             <a>|   id   |   title   |   created_date   |   modified_date   |   refering_to_dos_id   |</a>
         </div>
-        {{#todos}}
+        {{#todos.content}}
         <div class="content-body">
             <input type="checkbox" class="checkBox">
             <div class="content-body-wrapper">
@@ -28,11 +28,20 @@
 
             </div>
         </div>
-        {{/todos}}
+        {{/todos.content}}
         <div class="content-side">
             <input id="add-todo-textarea" type="text" class="validate" placeholder="TO-DO TITLE"/>
             <button type="submit" class="addToDo" onclick="addToDo()" value="/api/todos/">ADD TODO</button>
         </div>
+
+        <div class="pagination">
+            <a>&laquo;</a>
+            {{#pages}}
+            <a href="?page={{@index}}"> {{@index}} </a>
+            {{/pages}}
+            <a>&raquo;</a>
+        </div>
+
     </div>
 <script type="text/javascript" src="/js/index.js"></script>
 <script type="text/javascript" src="/js/template.js"></script>
