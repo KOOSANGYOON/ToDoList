@@ -35,6 +35,9 @@ public class ToDo extends BaseEntity{
         return this;
     }
     public ToDo registerReferingToDo(ToDo toDo) throws IllegalArgumentException {
+        if (toDo.equals(this)) {
+            throw new IllegalArgumentException("cannot register self.");
+        }
         if (referingToDos.isAlreadyRefering(toDo)) {
             throw new IllegalArgumentException("This ToDo is Already exist.");
         }
@@ -106,6 +109,9 @@ public class ToDo extends BaseEntity{
     }
     public String getReferedToDoTitle(int index) {
         return referedToDos.getValueOf(index);
+    }
+    public String getReferId() {
+        return referingToDos.getReferId();
     }
 
     //equals / hashcode

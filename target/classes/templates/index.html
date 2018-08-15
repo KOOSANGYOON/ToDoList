@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>test</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-<a>|   id   |   created_date   |   modified_date   |   is_done   |   ready_status   |   title   |   refering_to_dos_id   |</a>
-{{#todos}}
-<li>{{id}} | {{createDate}} | {{modifiedDate}} | {{isDone}} | {{readyState}} | {{title}}</li>
-{{/todos}}
+    <div class="titleBar">Hello! This is your to do lists.</div>
+
+    <div class="contents-wrapper">
+        <div class="content-head">
+            <a>|   id   |   title   |   created_date   |   modified_date   |   refering_to_dos_id   |</a>
+        </div>
+        {{#todos}}
+        <div class="content-body">
+            <input type="checkbox" class="checkBox">
+            <div class="content-body-wrapper">
+                <li class="content-domain">|&nbsp; {{id}} &nbsp; | &nbsp; {{title}} &nbsp; | &nbsp; {{formattedCreatedDate}} &nbsp;
+                    | &nbsp; {{formattedModifiedDate}} &nbsp; | &nbsp; {{referId}} &nbsp; |
+                    <select id="targetToDo">
+                        {{#todos}}
+                        <option id="{{id}}" value="{{title}}">{{title}}</option>
+                        {{/todos}}
+                    </select>
+                    <button type="submit" value="{{id}}" class="addrefBtn" onclick="addref()">addref</button>
+                </li>
+
+            </div>
+        </div>
+        {{/todos}}
+        <div class="content-side">
+            <input id="add-todo-textarea" type="text" class="validate" placeholder="TO-DO TITLE"/>
+            <button type="submit" class="addToDo" onclick="addToDo()" value="/api/todos/">ADD TODO</button>
+        </div>
+    </div>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/template.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
 </body>
 </html>

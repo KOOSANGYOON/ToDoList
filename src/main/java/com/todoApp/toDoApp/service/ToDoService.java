@@ -18,8 +18,13 @@ public class ToDoService {
     private ToDoRepository toDoRepository;
 
     public ToDo addToDo(String newTitle) throws DataIntegrityViolationException {
-        ToDo newToDo = new ToDo(newTitle);      //title중복시 exception 발생.
-        return toDoRepository.save(newToDo);
+        try {
+            ToDo newToDo = new ToDo(newTitle);      //title중복시 exception 발생.
+            return toDoRepository.save(newToDo);
+        }catch (DataIntegrityViolationException e) {
+            e.printStackTrace();
+            throw new DataIntegrityViolationException("data name error occur.");
+        }
     }
 
     public ToDo addRef(Long id, Long referingId) throws Exception, IllegalArgumentException{
