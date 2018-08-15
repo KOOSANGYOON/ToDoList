@@ -21,7 +21,16 @@ function addToDo(e) {
     });
 }
 
+// $(".addrefBtn").on("click", e => {
+//     e.previousElementSibling.val();
+// })
+
+$(".addrefBtn").on("click", addref);
+
 function addref(e) {
+    var test = $(e.target).closest("option").attr("id");
+    // var test = $(this).closest("select").attr("id");
+    console.log("tt : ", test);
     var targetToDo = $("#targetToDo option:selected").text();
     var toDoId = $(".addrefBtn").val();
 

@@ -36,6 +36,9 @@ public class ToDoService {
 
     public ToDo addToDo(String newTitle) throws DataIntegrityViolationException {
         try {
+            if (toDoRepository.findByTitle(newTitle) != null) {
+                throw new DataIntegrityViolationException("not unique title.");
+            }
             ToDo newToDo = new ToDo(newTitle);      //title중복시 exception 발생.
             return toDoRepository.save(newToDo);
         }catch (DataIntegrityViolationException e) {

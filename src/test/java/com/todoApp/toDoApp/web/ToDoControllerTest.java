@@ -17,8 +17,8 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ToDoControllerTest {
 
     private static final Logger log = LoggerFactory.getLogger(ToDoControllerTest.class);
@@ -220,5 +220,21 @@ public class ToDoControllerTest {
         assertThat(response3.getStatusCode(), is(HttpStatus.OK));
         ResponseEntity<String> response4 = getResponse(String.format("/api/todos/%d/addref", toDo4.getId()), toDo1.getId());
         assertThat(response4.getStatusCode(), is(HttpStatus.INTERNAL_SERVER_ERROR));
+    }
+
+    @Test
+    public void test() {
+        ToDo toDo1 = makeToDo("toDo21");
+        ToDo toDo2= makeToDo("toDo21");
+//        while (true) {
+//
+//        }
+        ToDo toDo3 = makeToDo("toDo22");
+        log.error("에러 : " + toDo1.getId());
+        log.error("에러 : " + toDo3.getId());
+        Long expected = toDo1.getId();
+        Long actual = toDo3.getId();
+
+        assertThat(expected + 1, is(actual));
     }
 }

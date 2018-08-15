@@ -36,8 +36,10 @@ public class HomeController {
     public String main(Model model, @PageableDefault(sort = { "id" }, direction = Sort.Direction.ASC, size = 5) Pageable pageable) {
         Page<ToDo> toDoPage = toDoRepository.findAll(pageable);
         model.addAttribute("todos", toDoPage);
-
         model.addAttribute("pages", toDoService.calculatePage());
+        model.addAttribute("todoList", toDoRepository.findAll());
+
+        log.debug("!! : " + toDoPage);
 
         return "index";
     }

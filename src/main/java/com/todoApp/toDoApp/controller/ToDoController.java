@@ -8,6 +8,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/todos")
@@ -18,7 +19,7 @@ public class ToDoController {
     private ToDoService toDoService;
 
     @PostMapping("/")
-    public ToDo createToDo(@RequestBody String newTitle) {
+    public ToDo createToDo(@Valid @RequestBody String newTitle) {
         ToDo newToDo = null;
         try {
             newToDo =  toDoService.addToDo(newTitle);
