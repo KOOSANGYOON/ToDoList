@@ -29,18 +29,26 @@ $(".addrefBtn").on("click", addref);
 $(".checkBox").on("click", completeToDo);
 
 function addref(e) {
-    var test = $(e.target).closest("#targetToDo").val();
-    // var test = $(e.target).closest("select").closest("option:selected").text();
-    // var test = $(e.target).closest("#optionSelected option:selected").val();
-    // var test = $(e.target).previousElementSibling;
-    // var test = $(this).closest("select").attr("id");
-    console.log("tt : ", test);
-    var targetToDo = $("#targetToDo option:selected").text();
-    var toDoId = $(".addrefBtn").val();
+    var toDoId = $(this).val();
+    console.log("hahahaha", toDoId);
 
-    // var targetToDo = $("#targetToDo").val();
-    // console.log(targetToDo);
-    console.log(toDoId);
+    var url = "/api/todos/" + toDoId + "/addref";
+    console.log(url);
+
+    var targetId = $(e.target).closest("#targetToDo").closest("#optionSelected option:selected").val();
+    console.log(targetId);
+
+    $.ajax({
+        type: 'post',
+        url: url,
+        contentType: 'text/html; charset=utf-8',
+        data: targetId,
+        dataType: 'json'}).done(function createToDoSuccess(data) {
+        console.log("success");
+    }).fail(function createToDoFail() {
+        console.log("fail");
+        alert("참조를 걸 수 없습니다.");
+    });
 }
 
 function completeToDo(e) {
@@ -58,12 +66,11 @@ function completeToDo(e) {
         data: toDoId,
         dataType: 'json'}).done(function createToDoSuccess(data) {
         console.log("success");
-        // $(e.target).closest(".content-domain").style(backgroundColor)
-        $(e.target).closest(".content-domain").css('background-color', '9FCD2C');
-        $(e.target).closest(".checkBox").css('display', 'none');
-        // window.location.reload();
+        $(e.target).closest(".content-body").css('background-color', '9FCD2C');
+        $(e.target).closest("#checkBox").css('display', 'none');
+        $(e.target).closest(".content-domain").css('background-color', 'black');
     }).fail(function createToDoFail() {
         console.log("fail");
-        alert("이름을 다시 설정해주세요.");
+        alert("선행 할일들을 먼저 마쳐주세요.");
     });
 }
