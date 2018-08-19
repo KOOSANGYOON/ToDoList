@@ -39,7 +39,7 @@ public class HomeController {
         model.addAttribute("pages", toDoService.calculatePage());
         model.addAttribute("todoList", toDoRepository.findAll());
 
-        log.debug("!! : " + toDoPage);
+        log.debug(" : " + toDoPage);
 
         return "index";
     }

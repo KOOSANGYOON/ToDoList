@@ -61,7 +61,7 @@ public class ReferingToDos {
     public String getReferId() {
         String result = "";
         for (ToDo referingToDo : referingToDos) {
-            result += referingToDo.getId() + " ";
+            result += "@" + referingToDo.getId() + " ";
         }
         return result;
     }

@@ -14,13 +14,13 @@
         </div>
         {{#todos.content}}
         <div class="content-body">
-            <input type="checkbox" class="checkBox">
+            <input type="checkbox" class="checkBox" value="{{id}}">
             <div class="content-body-wrapper" id="test">
                 <li class="content-domain">|&nbsp; {{id}} &nbsp; | &nbsp; {{title}} &nbsp; | &nbsp; {{formattedCreatedDate}} &nbsp;
                     | &nbsp; {{formattedModifiedDate}} &nbsp; | &nbsp; {{referId}} &nbsp; |
-                    <select id="targetToDo">
+                    <select id="targetToDo" value="{{id}}">
                         {{#todoList}}
-                        <option id="{{id}}" value="{{title}}">{{title}}</option>
+                        <option id="optionSelected" value="{{id}}">{{title}}</option>
                         {{/todoList}}
                     </select>
                     <button type="submit" value="{{id}}" class="addrefBtn">addref</button>
