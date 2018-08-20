@@ -1,5 +1,11 @@
 
-## 카카오 과제 trouble shooting
+## 카카오 과제 사용법 & trouble shooting
+
+### 사용법
+![Image](https://github.com/KOOSANGYOON/ToDoList/blob/master/todo.png?raw=true)
+
+---
+### trouble shooting
 
 1. ToDo - ToDo 관계 매핑문제 발생
 
@@ -37,5 +43,4 @@
 
   - back-end의 테스트 케이스는 통과했지만, (로직은 구성됬지만,) View단에서 연결되지 않아서 가시적인 테스트가 불가했고,
   결국 명확하게 완성하지 못한 결과 발생.
-  
-6. view 기능 연결필요.
+  - window.location.reload() 를 사용했다. -> ajax를 사용하는 의미가 없어짐..
