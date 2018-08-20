@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e58a9564-6f77-4dc8-a51b-d5533591500c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,6 +15,9 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ToDoListApp$ToDoAppApplication.ic" NAME="ToDoAppApplication Coverage Results" MODIFIED="1534765205552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -63,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <caret line="10" column="138" selection-start-line="10" selection-start-column="138" selection-end-line="10" selection-end-column="138" />
             </state>
           </provider>
         </entry>
@@ -85,33 +87,33 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test :</find>
+      <find />
       <find>userid</find>
       <find>구상윤</find>
       <find>l</find>
-      <find>test ::</find>
-      <find>test target</find>
-      <find>here is</find>
-      <find>toDoOne :</find>
+      <find />
+      <find />
+      <find />
+      <find />
       <find>todoOne</find>
-      <find>s refering :</find>
-      <find>test Two</find>
-      <find>refergin :</find>
+      <find />
+      <find />
+      <find />
       <find>user</find>
-      <find>query ST</find>
-      <find>query END</find>
+      <find />
+      <find />
       <find>START</find>
-      <find>query START</find>
+      <find />
       <find>||</find>
       <find>DEBUG</find>
       <find>||||</find>
       <find>r</find>
-      <find>refering :</find>
+      <find />
       <find>please</find>
       <find>isReady</find>
       <find>~~</find>
       <find>update</find>
-      <find>test start</find>
+      <find />
       <find>에러</find>
       <find>!!</find>
       <find>check</find>
@@ -597,7 +599,7 @@
       <workItem from="1534334158916" duration="1318000" />
       <workItem from="1534395536626" duration="1218000" />
       <workItem from="1534400632015" duration="8909000" />
-      <workItem from="1534729268312" duration="10156000" />
+      <workItem from="1534729268312" duration="10417000" />
     </task>
     <servers />
   </component>
@@ -634,7 +636,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170494000" />
+    <option name="totallyTimeSpent" value="170755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1054,7 +1056,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <caret line="10" column="138" selection-start-line="10" selection-start-column="138" selection-end-line="10" selection-end-column="138" />
         </state>
       </provider>
     </entry>

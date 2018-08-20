@@ -1,6 +1,5 @@
-=======================================================================================================
-
-${AnsiColor.BRIGHT_YELLOW}         mmmm
+${AnsiColor.BRIGHT_YELLOW}=======================================================================================================
+         mmmm
      /mmmmmmmmmmm:        ,--.              ,--.
    :mmmmmmmmmmmmmmm       |  |,-.   ,--,--. |  |,-.   ,--,--.  ,---.     ,---.   ,--,--. ,--. ,--.
    mmmmmmmmmmmmmmmmm      |     /  ' ,-.  | |     /  ' ,-.  | | .-. |   | .-. | ' ,-.  |  \  '  /
@@ -8,4 +7,5 @@ ${AnsiColor.BRIGHT_YELLOW}         mmmm
    :mmmmmmmmmmmmmmm       `--'`--'  `--`--' `--'`--'  `--`--'  `---'    |  |-'   `--`--' .-'  /
      +mmmmmmmmmmm:                                                      `--'             `---'
       mmmmmmm/
-      //                                ${AnsiColor.DEFAULT} :: Spring Boot :: ${spring-boot.formatted-version}
+      //
+======================================================= :: Spring Boot :: ${spring-boot.formatted-version}============${AnsiColor.DEFAULT}
