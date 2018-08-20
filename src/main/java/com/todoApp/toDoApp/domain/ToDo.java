@@ -95,6 +95,9 @@ public class ToDo extends BaseEntity{
     public boolean isDone() {
         return isDone;
     }
+    public boolean getIsDone() {
+        return isDone;
+    }
     public boolean isReadyState() {
         return referedToDos.isReadyState();
     }

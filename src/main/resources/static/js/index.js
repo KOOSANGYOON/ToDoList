@@ -65,10 +65,7 @@ function completeToDo(e) {
         data: toDoId,
         dataType: 'json'}).done(function createToDoSuccess(data) {
         console.log("success");
-        $(e.target).closest(".content-body").css('background-color', '9FCD2C');
-        // $(e.target).closest(".complete").css('display', 'none');
-        $(e.target).closest(".complete").text('completed');
-        $(e.target).closest(".content-domain").css('background-color', 'black');
+        window.location.reload();
     }).fail(function createToDoFail() {
         console.log("fail");
         alert("선행 할일들을 먼저 마쳐주세요.");
