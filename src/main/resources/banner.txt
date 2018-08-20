@@ -1,0 +1,11 @@
+=======================================================================================================
+
+${AnsiColor.BRIGHT_YELLOW}         mmmm
+     /mmmmmmmmmmm:        ,--.              ,--.
+   :mmmmmmmmmmmmmmm       |  |,-.   ,--,--. |  |,-.   ,--,--.  ,---.     ,---.   ,--,--. ,--. ,--.
+   mmmmmmmmmmmmmmmmm      |     /  ' ,-.  | |     /  ' ,-.  | | .-. |   | .-. | ' ,-.  |  \  '  /
+   mmmmmmmmmmmmmmmmm      |  \  \  \ '-'  | |  \  \  \ '-'  | ' '-' '   | '-' ' \ '-'  |   \   /
+   :mmmmmmmmmmmmmmm       `--'`--'  `--`--' `--'`--'  `--`--'  `---'    |  |-'   `--`--' .-'  /
+     +mmmmmmmmmmm:                                                      `--'             `---'
+      mmmmmmm/
+      //                                ${AnsiColor.DEFAULT} :: Spring Boot :: ${spring-boot.formatted-version}
