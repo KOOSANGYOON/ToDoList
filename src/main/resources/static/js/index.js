@@ -1,6 +1,6 @@
 'use strict';
 
-function addToDo(e) {
+function addToDo() {
     var newTitle = $("#add-todo-textarea").val();
     var url = $(".addToDo").val();
 
@@ -27,15 +27,18 @@ function addToDo(e) {
 
 $(".addrefBtn").on("click", addref);
 $(".checkBox").on("click", completeToDo);
+// $(".addToDo").on("click", addToDo);
 
 function addref(e) {
     var toDoId = $(this).val();
     console.log("hahahaha", toDoId);
 
-    var url = "/api/todos/" + toDoId + "/addref";
+    var box = document.getElementById('targetToDo' + toDoId);
+    var targetId = Number(box.options[box.selectedIndex].value);
+
+    var url = "/api/todos/" + toDoId + "/addref/" + targetId;
     console.log(url);
 
-    var targetId = $(e.target).closest("#targetToDo").closest("#optionSelected option:selected").val();
     console.log(targetId);
 
     $.ajax({

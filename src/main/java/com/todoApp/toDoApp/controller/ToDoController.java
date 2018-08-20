@@ -30,10 +30,10 @@ public class ToDoController {
         return newToDo;
     }
 
-    @PostMapping("/{id}/addref")
-    public ToDo addRef(@PathVariable Long id, @RequestBody Long referingId) throws Exception {
+    @PostMapping("/{id}/addref/{targetId}")
+    public ToDo addRef(@PathVariable Long id, @PathVariable Long targetId) throws Exception {
         try {
-            ToDo toDo = toDoService.addRef(id, referingId);
+            ToDo toDo = toDoService.addRef(id, targetId);
             return toDo;
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException("bi-direction occurs.");

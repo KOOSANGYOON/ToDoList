@@ -19,7 +19,7 @@
             <div class="content-body-wrapper">
                 <li class="content-domain">|&nbsp; {{id}} &nbsp; | &nbsp; {{title}} &nbsp; | &nbsp; {{formattedCreatedDate}} &nbsp;
                     | &nbsp; {{formattedModifiedDate}} &nbsp; | &nbsp; {{referId}} &nbsp; |
-                    <select id="targetToDo" value="{{id}}">
+                    <select id="targetToDo{{id}}" value="{{id}}">
                         {{#todoList}}
                         <option id="optionSelected" value="{{id}}">{{id}} 번 할일 : {{title}}</option>
                         {{/todoList}}
