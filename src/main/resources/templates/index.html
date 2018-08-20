@@ -32,7 +32,7 @@
             {{else}}
             <button class="complete" value="{{id}}">complete todo</button>
             <div class="content-body-wrapper">
-                <li class="content-domain" style="background-color: #6371cd;">|&nbsp; {{id}} &nbsp; | &nbsp; {{title}} &nbsp; | &nbsp; {{formattedCreatedDate}} &nbsp;
+                <li class="content-domain" style="background-color: #6371cd;" value="{{id}}">|&nbsp; {{id}} &nbsp; | &nbsp; <textarea class="todoTitle">{{title}}</textarea> &nbsp; | &nbsp; {{formattedCreatedDate}} &nbsp;
                     | &nbsp; {{formattedModifiedDate}} &nbsp; | &nbsp; {{referId}} &nbsp; |
                     <select id="targetToDo{{id}}" value="{{id}}">
                         {{#todoList}}
