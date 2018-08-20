@@ -26,8 +26,7 @@ function addToDo() {
 // })
 
 $(".addrefBtn").on("click", addref);
-$(".checkBox").on("click", completeToDo);
-// $(".addToDo").on("click", addToDo);
+$(".complete").on("click", completeToDo);
 
 function addref(e) {
     var toDoId = $(this).val();
@@ -48,6 +47,7 @@ function addref(e) {
         data: targetId,
         dataType: 'json'}).done(function createToDoSuccess(data) {
         console.log("success");
+        window.location.reload();
     }).fail(function createToDoFail() {
         console.log("fail");
         alert("참조를 걸 수 없습니다.");
@@ -55,8 +55,7 @@ function addref(e) {
 }
 
 function completeToDo(e) {
-    console.log("hi");
-    var toDoId = $(e.target).closest("input").val();
+    var toDoId = $(this).val();
     console.log(toDoId);
 
     var url = "/api/todos/" + toDoId + "/done";
@@ -70,10 +69,12 @@ function completeToDo(e) {
         dataType: 'json'}).done(function createToDoSuccess(data) {
         console.log("success");
         $(e.target).closest(".content-body").css('background-color', '9FCD2C');
-        $(e.target).closest("#checkBox").css('display', 'none');
+        // $(e.target).closest(".complete").css('display', 'none');
+        $(e.target).closest(".complete").text('completed');
         $(e.target).closest(".content-domain").css('background-color', 'black');
     }).fail(function createToDoFail() {
         console.log("fail");
         alert("선행 할일들을 먼저 마쳐주세요.");
+        window.location.reload();
     });
 }
